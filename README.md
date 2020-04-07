@@ -8,6 +8,10 @@ This LINE bot manages books that I have.
 - 個人用です。現在の仕様では、ご利用の際にはご自身用のLINE botを作成していただく必要があります。こちらからそのまま利用出来るのはコードの中身のみです。
 
 ---
+## 概要
+- LINEで手軽に本の管理を行う目的で作成したLINE botです。現状では6つの機能を持っています(タイトル一覧表示、タイトル情報追加、巻数確認、巻数更新、タイトル情報編集、タイトル情報削除)。ウェブアプリケーションを介してGoogle Drive上のスプレッドシートと連動し、管理を行っております。
+
+---
 
 ## 必要なもの
 - PC (おそらくスマホからではコーディングが出来ない)
@@ -36,7 +40,7 @@ This LINE bot manages books that I have.
 
 ![コマンドリスト](https://github.com/kingStaku/LINE-BOT-that-manages-books/blob/master/images/CommandList.png)
 
-**機能**
+### 機能
 
 1. 所持タイトル一覧表示
     - 所持している本のタイトル、巻数、完結しているかどうかの情報を一覧として表示します。以下実行例。
