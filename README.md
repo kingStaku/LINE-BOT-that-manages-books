@@ -32,26 +32,38 @@ This LINE bot manages books that I have.
 ---
 
 ## 使い方
-- こちらのLINE botには現在6つの機能が搭載されています。機能実行のためのコマンドはbotに「コマンドリスト」というメッセージを送ることでも確認出来ますので、適宜そちらで確認してみてください。
+- こちらのLINE botには現在6つの機能が搭載されています。機能実行のためのコマンドはbotに「コマンドリスト」というメッセージを送ることでも確認出来ますので、適宜そちらで確認してみてください。以下実行例(見切れてしまってすみません)。
 
 ![コマンドリスト](https://github.com/kingStaku/LINE-BOT-that-manages-books/blob/master/images/CommandList.png)
 
 **機能**
 
+1. 所持タイトル一覧表示
+    - 所持している本のタイトル、巻数、完結しているかどうかの情報を一覧として表示します。以下実行例。
+
+    ![一覧表示](https://github.com/kingStaku/LINE-BOT-that-manages-books/blob/master/images/table.png)
+
+1. 新規購入タイトル情報追加
+    - 新規に追加したいタイトルの情報を指定通りに追加します。以下実行例。「山田の冒険」という作品の情報を追加しています。
+
+    ![タイトル追加](https://github.com/kingStaku/LINE-BOT-that-manages-books/blob/master/images/add.png)![追加結果](https://github.com/kingStaku/LINE-BOT-that-manages-books/blob/master/images/add_result.png)
+
 1. 巻数確認
-    - 指定した作品を何巻まで持っているかを表示します。
+    - 指定した作品を何巻まで持っているかを表示します。以下実行例。追加した「山田の冒険」の巻数を確認しています。
 
-2. 巻数更新
-    - 指定した作品の巻数を一巻分更新します。
+    ![巻数確認](https://github.com/kingStaku/LINE-BOT-that-manages-books/blob/master/images/check.png)
 
-3. 所持タイトル一覧表示
-    - 所持している本のタイトル、巻数、完結しているかどうかの情報を一覧として表示します。
+1. 巻数更新
+    - 指定した作品の巻数を一巻分更新します。以下実行例。「山田の冒険」の巻数を更新しています。
 
-4. 新規購入タイトル情報追加
-    - 新規に追加したいタイトルの情報を指定通りに追加します。
+    ![巻数更新](https://github.com/kingStaku/LINE-BOT-that-manages-books/blob/master/images/update.png)
 
-5. 所持タイトル情報編集
-    - 指定した所持タイトルの情報を指定通りに編集します。
+1. 所持タイトル情報編集
+    - 指定した所持タイトルの情報を指定通りに編集します。以下実行例。「山田の冒険」の情報を「山田の探検」の情報に編集しています。
 
-6. 所持タイトル情報削除
-    - 指定した所持タイトルの情報を削除することが出来ます。
+    ![情報編集](https://github.com/kingStaku/LINE-BOT-that-manages-books/blob/master/images/edit.png)![編集結果](https://github.com/kingStaku/LINE-BOT-that-manages-books/blob/master/images/edit_result.png)
+
+1. 所持タイトル情報削除
+    - 指定した所持タイトルの情報を削除することが出来ます。以下実行例。「山田の探検」の情報を削除しています。
+
+    ![タイトル削除](https://github.com/kingStaku/LINE-BOT-that-manages-books/blob/master/images/delete.png)
