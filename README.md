@@ -9,12 +9,13 @@ This LINE bot manages books that I have.
 
 ---
 ## 概要
-- LINEで手軽に本の管理を行う目的で作成したLINE botです。現状では6つの機能を持っています(タイトル一覧表示、タイトル情報追加、巻数確認、巻数更新、タイトル情報編集、タイトル情報削除)。ウェブアプリケーションを介してGoogle Drive上のスプレッドシートと連動し、管理を行っております。
+- LINEで手軽に本の管理を行う目的で作成したLINE botです。個人的に所持している本が多くなりすぎて、把握しきれなくなったので作成しました。こちらのLINE botは現状では6つの機能を持っています(タイトル一覧表示、タイトル情報追加、巻数確認、巻数更新、タイトル情報編集、タイトル情報削除)。ウェブアプリケーションを介してGoogle Drive上のスプレッドシートと連動し、管理を行っております。使用言語はGoogle Apps Script(ほぼJavascript)です。
 
 ---
 
 ## 必要なもの
-- PC (おそらくスマホからではコーディングが出来ない)
+- PC (スマホからではコーディングが出来ない)
+    - OSはGoogleとLINEが使えるものであれば大丈夫です。
 - LINE
     - LINEそのもの (PC・スマホどちらのアプリケーションでも可)
     - ご自身で作成したLINE bot
@@ -38,36 +39,43 @@ This LINE bot manages books that I have.
 ## 使い方
 - こちらのLINE botには現在6つの機能が搭載されています。機能実行のためのコマンドはbotに「コマンドリスト」というメッセージを送ることでも確認出来ますので、適宜そちらで確認してみてください。以下実行例(見切れてしまってすみません)。
 
-![コマンドリスト](https://github.com/kingStaku/LINE-BOT-that-manages-books/blob/master/images/CommandList.png)
+![コマンドリスト](images/CommandList.png)
 
 ### 機能
 
 1. 所持タイトル一覧表示
     - 所持している本のタイトル、巻数、完結しているかどうかの情報を一覧として表示します。以下実行例。
 
-    ![一覧表示](https://github.com/kingStaku/LINE-BOT-that-manages-books/blob/master/images/table.png)
+    ![一覧表示](images/table.png)
 
 1. 新規購入タイトル情報追加
     - 新規に追加したいタイトルの情報を指定通りに追加します。以下実行例。「山田の冒険」という作品の情報を追加しています。
 
-    ![タイトル追加](https://github.com/kingStaku/LINE-BOT-that-manages-books/blob/master/images/add.png)![追加結果](https://github.com/kingStaku/LINE-BOT-that-manages-books/blob/master/images/add_result.png)
+    ![タイトル追加](images/add.png)![追加結果](images/add_result.png)
 
 1. 巻数確認
     - 指定した作品を何巻まで持っているかを表示します。以下実行例。追加した「山田の冒険」の巻数を確認しています。
 
-    ![巻数確認](https://github.com/kingStaku/LINE-BOT-that-manages-books/blob/master/images/check.png)
+    ![巻数確認](images/check.png)
 
 1. 巻数更新
     - 指定した作品の巻数を一巻分更新します。以下実行例。「山田の冒険」の巻数を更新しています。
 
-    ![巻数更新](https://github.com/kingStaku/LINE-BOT-that-manages-books/blob/master/images/update.png)
+    ![巻数更新](images/update.png)
 
 1. 所持タイトル情報編集
     - 指定した所持タイトルの情報を指定通りに編集します。以下実行例。「山田の冒険」の情報を「山田の探検」の情報に編集しています。
 
-    ![情報編集](https://github.com/kingStaku/LINE-BOT-that-manages-books/blob/master/images/edit.png)![編集結果](https://github.com/kingStaku/LINE-BOT-that-manages-books/blob/master/images/edit_result.png)
+    ![情報編集](images/edit.png)![編集結果](images/edit_result.png)
 
 1. 所持タイトル情報削除
     - 指定した所持タイトルの情報を削除することが出来ます。以下実行例。「山田の探検」の情報を削除しています。
 
-    ![タイトル削除](https://github.com/kingStaku/LINE-BOT-that-manages-books/blob/master/images/delete.png)
+    ![タイトル削除](images/delete.png)
+
+---
+
+## 今後の展望
+    - LINEのリッチメニュー機能を用いることでさらに入力をスマートに
+    - 一覧ソート機能など、実装出来る細かい機能の実装
+    - 同じbotを他者も使えるような道を模索
